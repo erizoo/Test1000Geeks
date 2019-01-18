@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="add_car">ДОБАВИТЬ МАШИНУ</string>
+    <string name="save">сохранить</string>
+    <string name="manufacturer">Производитель</string>
+    <string name="model">Марка</string>
+    <string name="price">Цена</string>
+    <string name="abort">отмена</string>
+    <string name="filter">фильтр</string>
+
+    <string-array name="filter">
+        <item>По цене</item>
+        <item>По производителю</item>
+        <item>По марке</item>
+    </string-array>
+</resources>

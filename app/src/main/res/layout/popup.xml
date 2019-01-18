@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="29dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/panel_inactive"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_manufacturer"
+            style="@style/AppTheme.EditText.Popup"
+            android:layout_width="match_parent"
+            android:hint="@string/manufacturer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/AppTheme.EditText.Popup"
+            android:layout_width="match_parent"
+            android:hint="@string/model"
+            app:layout_constraintTop_toBottomOf="@+id/name_manufacturer" />
+
+        <EditText
+            android:id="@+id/price"
+            style="@style/AppTheme.EditText.Popup"
+            android:layout_width="match_parent"
+            android:hint="@string/price"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <Button
+            android:id="@+id/save_popup_button"
+            style="@style/AppTheme.Button.Popup"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_green"
+            android:text="@string/save"
+            app:layout_constraintTop_toBottomOf="@+id/price" />
+
+        <Button
+            android:id="@+id/abort_popup_button"
+            style="@style/AppTheme.Button.Popup"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_blue"
+            android:text="@string/abort"
+            app:layout_constraintTop_toBottomOf="@+id/save_popup_button" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
